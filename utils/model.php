@@ -50,7 +50,7 @@ class _model {
         // Retour : l'objet PDO
 
         if (empty(static::$bdd)) {
-            static::$bdd = new PDO("mysql:host=localhost;dbname=;charset=UTF8", "", "");
+            static::$bdd = new PDO("mysql:host=localhost;dbname=projet_combat_alaugier;charset=UTF8", "", "");
         }
         return static::$bdd;
 
