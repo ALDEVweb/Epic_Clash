@@ -15,7 +15,7 @@ if($perso->get("pos") > 0 && $perso->get("pos") < 10){
     }    
 }else if($perso->get("pos") == 0){
     echo "<p class='fs12 yellow txt-center'>Bienvenu dans 'Epic Clash : Lost Dungeon', entre dans le donjon, combat tes adversaires et soit le premier à atteindre la sortie.</p>";
-    echo "<div class='flex j-center w100'><button class='fs10 wfit btnActif'>Règles du jeu</button></div>";
+    echo "<div class='flex j-center w100'><a href='index.php?controleur=afficher_regle'><button class='fs10 wfit btnActif'>📜 Règles du jeu 📜</button></a></div>";
 }else if($perso->get("pos") == 10){
     echo "<p class='fs12 yellow txt-center'>Bravo ! Tu as atteint la sortie du donjon, ton aventure se termine ici, crée un nouveau personnage pour rejouer</p>";
     echo "<div class='flex j-center w100'><a href='index.php?controleur=afficher_form_creation'><button class='fs10 wfit btnActif'>Créer un nouveau personnage</button></a></div>";
